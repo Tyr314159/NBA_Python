@@ -8,7 +8,7 @@ TeamNames = {"ATL": "Atlanta Hawks", "BOS": "Boston Celtics", "CHA": "Charlotte 
              "HOU": "Houston Rockets", "IND": "Indiana Pacers", "LAC": "Los Angeles Clippers", "LAL": "Los Angeles Lakers", "MEM": "Memphis Grizzlies", 
              "MIA": "Miami Heat", "MIL": "Milwaukee Bucks", "MIN": "Minnesota Timberwolves", "NOP": "New Orleans Pelicans", 
              "NYK": "New York Knicks", "BKN": "Brooklyn Nets", "OKC": "Oklahoma City Thunder", "ORL": "Orlando Magic", 
-             "PHI": "Philadelphia 76ers", "PHO": "Phoenix Suns", "POR": "Portland Trail Blazers", "SAC": "Sacramento Kings", "TOR": "Toronto Raptors", 
+             "PHI": "Philadelphia 76ers", "PHX": "Phoenix Suns", "POR": "Portland Trail Blazers", "SAC": "Sacramento Kings", "TOR": "Toronto Raptors", 
              "UTA": "Utah Jazz", "WAS": "Washington Wizards", "SAS": "San Antonio Spurs"}
 
 sdb_url_base = "https://www.thesportsdb.com/api/v1/json/2/searchevents.php?e="
@@ -45,8 +45,6 @@ if __name__ == "__main__":
 
     today_dt = dt.date.today()
     date_check = today_dt - dt.timedelta(days=1)
-    xdays_dt = str(today_dt + dt.timedelta(days=input_days-1))
-    today_dt = str(today_dt)
     Total_Games_In_Day = 0
     num_days = 0
 
